@@ -13,13 +13,13 @@ export const Profile = (props: any) => {
   }
 
   return (
-    <>
     <div style={{ padding: 10 }}>
+      <div className='profilePage'>
           <h1>
               Profile
           </h1>
-          <p className='profilePage'>Welcome {userDetails}</p>
+          <button className="logoutBtn" onClick={handleLogout}>Logout</button>
+      </div>
     </div>
-    </>
   )
 }
